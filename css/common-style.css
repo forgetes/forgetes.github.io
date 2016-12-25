@@ -49,7 +49,6 @@ main {
   #floating_header .floating_header_real .floating_header_inner_container_contents {
     position: relative;
     height: 100%;
-    padding-top: 5px;
     padding-bottom: 5px;
     overflow: hidden; }
   #floating_header .floating_header_real .floating_header_inner_container_contents_left {
@@ -60,13 +59,12 @@ main {
     #floating_header .floating_header_real .floating_header_inner_container_contents_left .menu_left {
       float: left;
       display: inline-block;
-      margin: 0 0 10px; }
+      margin: 0 0 5px; }
       @media only screen and (max-width: 991px) {
         #floating_header .floating_header_real .floating_header_inner_container_contents_left .menu_left {
-          margin: 0 0 12px; } }
+          margin: 0 0 7px; } }
   #floating_header .floating_header_real .floating_header_inner_container_contents_right {
-    padding-top: 10px;
-    width: 70%;
+    padding-top: 13px;
     float: right;
     text-align: right; }
     #floating_header .floating_header_real .floating_header_inner_container_contents_right .menu_right {
@@ -167,7 +165,6 @@ main {
       top: 15px;
       left: 565px; }
   #floating_header .floating_header_real .header_line {
-    margin-top: -2px;
     border-top: 1px solid #ebebeb;
     display: block; }
 
@@ -195,7 +192,6 @@ main {
   #floating_header .floating_header_virtual .floating_header_inner_container_contents {
     position: relative;
     height: 100%;
-    padding-top: 5px;
     padding-bottom: 5px;
     overflow: hidden; }
   #floating_header .floating_header_virtual .floating_header_inner_container_contents_left {
@@ -206,13 +202,12 @@ main {
     #floating_header .floating_header_virtual .floating_header_inner_container_contents_left .menu_left {
       float: left;
       display: inline-block;
-      margin: 0 0 10px; }
+      margin: 0 0 5px; }
       @media only screen and (max-width: 991px) {
         #floating_header .floating_header_virtual .floating_header_inner_container_contents_left .menu_left {
-          margin: 0 0 12px; } }
+          margin: 0 0 7px; } }
   #floating_header .floating_header_virtual .floating_header_inner_container_contents_right {
-    padding-top: 10px;
-    width: 70%;
+    padding-top: 13px;
     float: right;
     text-align: right; }
     #floating_header .floating_header_virtual .floating_header_inner_container_contents_right .menu_right {
@@ -312,17 +307,35 @@ main {
       top: 15px;
       left: 565px; }
   #floating_header .floating_header_virtual .header_line {
-    margin-top: -2px;
     border-top: 1px solid #ebebeb;
     display: none; }
 
 #floating_header .floating_header_inner_container_contents_right_minimal {
   float: right;
-  padding-top: 10px;
-  width: 70%;
+  padding-top: 17px;
   padding-bottom: 5px;
   /*@extend .hidden-md;
 		@extend	.hidden-lg;*/ }
+  #floating_header .floating_header_inner_container_contents_right_minimal div {
+    vertical-align: center;
+    display: inline;
+    margin: 0 auto;
+    margin-right: 5px; }
+    #floating_header .floating_header_inner_container_contents_right_minimal div span {
+      font-size: 25px;
+      color: #000000; }
+
+#floating_header .search_hideen_bar {
+  width: 100% !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: none; }
+  #floating_header .search_hideen_bar .search_text_minimal:focus {
+    width: 100% !important;
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: default;
+    box-shadow: default; }
 
 .bottom_div {
   /*border-top: 1px solid $gray-color;*/
@@ -363,7 +376,7 @@ main {
   .bottom_div .choose_lang {
     display: inline;
     padding-left: 20px;
-    background: url("../img/Resize_world_flags/WorldFlags/Korea-South.png") no-repeat left; }
+    background: url("../img/world_flags/Korea-South.png") no-repeat left; }
     .bottom_div .choose_lang:hover {
       text-decoration: underline; }
   .bottom_div .bottom_line_down {
