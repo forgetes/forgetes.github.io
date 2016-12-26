@@ -315,7 +315,9 @@ main {
 #floating_header .floating_header_inner_container_contents_right_minimal {
   float: right;
   padding-top: 17px;
+  width: 70%;
   padding-bottom: 5px;
+  text-align: right;
   /*@extend .hidden-md;
 		@extend	.hidden-lg;*/ }
   #floating_header .floating_header_inner_container_contents_right_minimal div {

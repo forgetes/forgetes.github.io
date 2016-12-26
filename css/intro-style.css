@@ -9,35 +9,31 @@
     @media only screen and (max-width: 767px) {
       .main_contents .sub_contents:nth-child(1) {
         width: 100%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
       .main_contents .sub_contents:nth-child(1) {
         width: 100%; } }
     @media only screen and (min-width: 992px) {
       .main_contents .sub_contents:nth-child(1) {
         width: 33.33333333%; } }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 991px) {
       .main_contents .sub_contents:nth-child(1) .owner_profile {
         width: 90%;
-        margin: 0 auto; } }
-    @media only screen and (min-width: 768px) {
-      .main_contents .sub_contents:nth-child(1) .owner_profile {
-        width: 750px;
         margin: 0 auto; } }
     @media only screen and (min-width: 992px) {
       .main_contents .sub_contents:nth-child(1) .owner_profile {
         width: 250px;
         margin: 0 0 0 auto; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 991px) {
     .main_contents .sub_contents:nth-child(2) {
       padding-top: 25px; } }
   @media only screen and (min-width: 992px) {
     .main_contents .sub_contents:nth-child(2) {
       padding-top: 0; } }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 991px) {
     .main_contents .sub_contents:nth-child(2) .owner_intro {
       width: 90%;
       margin: 0 auto; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     .main_contents .sub_contents:nth-child(2) .owner_intro {
       width: 750px;
       margin: 0; } }
