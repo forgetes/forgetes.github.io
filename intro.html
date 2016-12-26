@@ -184,14 +184,24 @@
 <!--<script src="/js/jQuery/jquery.mobile-1.4.5.min.js"></script>-->
 <script type="text/javascript" src="/js/top-and-bottom.js"></script>
 <!--<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=022ded60e4849b0a26c9949d7b3b58be"></script>-->
-<script type="text/javascript">	
-	var map;
+<script type="text/javascript">		
 	function initMap() {
-	  map = new google.maps.Map(document.getElementById('intro_map'), {
-		center: {lat: 37.5090882, lng: 126.8801865},
-		zoom: 8
-	  });
-	}
+        var myLatLng = {lat: 37.5090882, lng: 126.8801865};
+
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('intro_map'), {
+          center: myLatLng,
+          scrollwheel: false,
+          zoom: 4
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: 'Hello World!'
+        });
+      }
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAt4AYScjaBqYdiQ5Ak9vJxlhyegHvAtI8&callback=initMap">
 </script>
