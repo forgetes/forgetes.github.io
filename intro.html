@@ -9,40 +9,8 @@
 <link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.min.css" />
 <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="./css/common-style.css" />
+<link rel="stylesheet" type="text/css" href="./css/intro-style.css" />
 <link rel="shortcut icon" href="./img/sjtechfavicon.ico">
-
-<style type="text/css">
-	.main_contents{
-		padding-top:20px;
-	}
-	.owner_profile{
-		width:250px;
-		margin: 0 0 0 auto;
-	}
-	.owner_intro{			
-		@media only screen and (max-width: 767px){	
-			width:100%;
-		}	
-		@media only screen and (min-width: 768px){
-			width:750px;
-		}
-	}
-	.info_contents{
-		min-height: 250px;
-	}
-	#intro_map{
-		width: 50%;
-		height: 50%;
-	}
-	.sub_contents{
-		@media only screen and (max-width: 767px){		
-			margin : 20px
-		}	
-		@media only screen and (min-width: 768px){
-		
-		}
-	}
-</style>
 
 </head>
 <body> 
@@ -105,8 +73,8 @@
 					<img src="./img/profile.JPG" alt="profile_picture" class="img-circle">
 					<div class="caption">
 						<h3>안녕하세요.</h3>
-						<p>선진기계 주인장 입니다. 
-						귀하가 원하는 모든 제품을 만들어 드립니다.<br/>
+						<p>선진기계 주인장 김신 입니다. 
+						귀하가 원하는 모든 제품이 여기에 있습니다.<br/>
 						Hello i'am Sun-Jin tech We will make all the products you want.<br/>
 						先進機械店主です。あなたが望むすべての製品を作っています。<br/>
 						Die erweiterte Host-Maschine. Wir produzieren alle Produkte, die Sie wollen.<br/>
@@ -139,7 +107,9 @@
 						<div class="panel-heading"><strong>위치</strong></div>
 						<div class="info_contents panel-body">
 							<div id="intro_map"></div>
-							백호 태권도장 옆 좌측 골목길 20m 이내
+							<div id="intro_map_review">
+								백호 태권도장 옆 좌측 골목길 20m 이내 간판 따로 없음	
+							</div>							
 						</div>
 					</div>
 					<div class="panel panel-default">
@@ -191,8 +161,8 @@
         // Create a map object and specify the DOM element for display.
         var map = new google.maps.Map(document.getElementById('intro_map'), {
           center: myLatLng,
-          scrollwheel: false,
-          zoom: 4
+          scrollwheel: true,
+          zoom: 14
         });
 
         // Create a marker and set its position.
