@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1", "user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=11,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 <title>SJ TECH</title>
 
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/3/w3.css">
 <link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.min.css" />
 <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="./css/common-style.css" />
 <link rel="shortcut icon" href="./img/sjtechfavicon.ico">
 
+<style>
+	.mySlides {
+		display:none;
+		width:100%;
+	}
+	.view-partner {
+		cursor:pointer;
+		width:100%;
+	}
+</style>
 </head>
 <body>
 <!-- top area --> 
@@ -49,8 +60,7 @@
 						<div class="floating_search_big_text hidden-sm hidden-xs">
 							<div class="input-group input-group-sm">
 								<span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
-								<input type="text" id="search_big_text" class="form-control" placeholder="원하는 내용 찾기">
-								<!--<span class="glyphicon glyphicon-remove form-control-feedback remove_btn" aria-hidden="true"></span>-->
+								<input type="text" id="search_big_text" class="form-control" placeholder="원하는 내용 찾기">								
 							</div>							
 						</div>
 						<div class="floating_header_inner_container_contents_right_search hidden-sm hidden-xs">
@@ -63,7 +73,51 @@
 		</div>		
 	</div>
 </header>
-<main></main>
+<main>
+
+<div class="w3-content" style="max-width:1000px">
+	<img class="mySlides img-responsive" src="./img/choi/250B423D58CA7EF92335A6.jpg" >
+	<img class="mySlides img-responsive" src="./img/choi/257E323D58CA7EFB10790C.jpg" >
+	<img class="mySlides img-responsive" src="./img/choi/257F4E3D58CA7EF930DF06.jpg">
+	<img class="mySlides img-responsive" src="./img/choi/2630C43D58CA7EF90B25D5.jpg" >
+	<img class="mySlides img-responsive" src="./img/choi/2724B03D58CA7EFC2217E0.jpg" >
+	
+	<div class="w3-row-padding w3-section">
+	
+		<button class="w3-button w3-display-left" value="-1">&#10094;</button>
+		
+		<div class="w3-col s4">
+		  <img class="view-partner w3-opacity w3-hover-opacity-off img-responsive"
+		   src="./img/choi/250B423D58CA7EF92335A6.jpg" value="1" alt="1번">
+		   1번
+		</div>
+		<div class="w3-col s4">
+		  <img class="view-partner w3-opacity w3-hover-opacity-off img-responsive"
+		   src="./img/choi/257E323D58CA7EFB10790C.jpg" value="2" alt="2번">
+		   2번
+		</div>
+		<div class="w3-col s4">
+		  <img class="view-partner w3-opacity w3-hover-opacity-off img-responsive"
+		   src="./img/choi/257F4E3D58CA7EF930DF06.jpg" value="3" alt="3번">
+		   3번
+		</div>
+		<div class="w3-col s4" style="display:none">
+		  <img class="view-partner w3-opacity w3-hover-opacity-off img-responsive"
+		   src="./img/choi/2630C43D58CA7EF90B25D5.jpg" value="4" alt="4번">
+		   4번
+		</div>
+		<div class="w3-col s4" style="display:none">
+		  <img class="view-partner w3-opacity w3-hover-opacity-off img-responsive"
+		   src="./img/choi/2724B03D58CA7EFC2217E0.jpg" value="5" alt="5번">
+		   5번
+		</div>
+		
+		<button class="w3-button w3-display-right" value="1">&#10095;</button>
+	</div>
+	
+</div>
+	
+</main>
 <!-- bottom area -->
 <bottom>
 	<div class="bottom_div">
@@ -83,16 +137,108 @@
 					</div>
 				</div>	
 				<div class="bottom_line_down"></div>	
-				<p class="bottom_copy"><samp>Copyright © 2016 <mark>tfcp</mark> Corp.</samp><br/><samp>본 페이지는 <strong>백수</strong>가 학습용으로 제작 하였습니다. 불편하신 점이 있으면 바로 조치하도록 하겠습니다.</samp> <br/>본 페이지는 크롬 최신버전에 최적화 되어 있습니다.</p>
+				<p class="bottom_copy"><samp>Copyright © 2016 <mark>tfcp</mark> Corp.</samp><br/><br/>본 페이지는 크롬 최신버전에 최적화 되어 있습니다.</p>
 			</div>
 		</div>
 	</div>
 </bottom>
+
+<!-- JavaScript zone -->
 <script src="js/jQuery/jquery-3.1.1.min.js"></script>
 <script src="js/jQuery/jquery-migrate-3.0.0.js"></script>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-<!--<script src="/js/jQuery/jquery-ui.min.js"></script>-->
-<!--<script src="/js/jQuery/jquery.mobile-1.4.5.min.js"></script>-->
-<script type="text/javascript" src="/js/top-and-bottom.js"></script>	
+<script type="text/javascript" src="/js/top-and-bottom.js"></script>
+<script type="text/javascript">
+	/* addEventListener이 ie8 이하 부터 addEventListener는 먹히지 않는다*/
+	function addEvent(element, eventName, cb, isCapture) { 
+		if (window.addEventListener) { 
+			element.addEventListener(eventName, cb, isCapture); 
+		} else if (window.attachEvent) { 
+			element.attachEvent("on" + eventName, cb); 
+		} else { 
+			element["on" + eventName] = cb; 
+		} 
+	}
+
+	var viewPartner = document.getElementsByClassName("view-partner");
+	var pmButton = document.getElementsByClassName("w3-button");
+	var slideIndex = 1;
+	var $rightButton = $(".w3-display-right");
+	
+	showDivs(slideIndex);
+	
+	
+	var autoSlide = setInterval(function(){$rightButton.trigger("click");}, 5000);
+	
+	function stopAutoSlide(){
+		clearInterval(autoSlide);
+	}
+	
+	function startAutoSlide(){
+		autoSlide = setInterval(function(){$rightButton.trigger("click");}, 5000);
+	}
+
+	function plusDivs(event) {
+		var n = parseInt(event.target.getAttribute("value"));
+	  	showDivs(slideIndex += n);
+	}
+
+	function currentDiv(event) {
+		var n = parseInt(event.target.getAttribute("value"));
+	  	showDivs(slideIndex = n);
+	} 
+
+	function showDivs(n) {
+		var i;
+		var viewCnt = 1;
+		var x = document.getElementsByClassName("mySlides");
+		var xLength = x.length;
+		var dots = viewPartner;
+		var dotsLength = dots.length;
+		
+		if (n > xLength) {slideIndex = 1}
+		if (n < 1) {slideIndex = xLength}
+		
+		for (i = 0; i < xLength; i++) {
+			x[i].style.display = "none"; 
+		} 
+		for (i = 0; i < dotsLength; i++) {
+			dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+		}
+		x[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " w3-opacity-off";
+		
+		for(i = slideIndex-1; i<(dotsLength+(slideIndex-1)); i++){
+			var j = i;
+			console.log("초기값",j);
+			if(j >= dotsLength){
+				console.log("빼기전",j);
+				j-=(dotsLength);
+				console.log("뺀후",j);
+			}
+			if(viewCnt < 4){
+				document.getElementsByClassName("w3-col")[j].style.display = "block";
+			}else{
+				document.getElementsByClassName("w3-col")[j].style.display = "none";
+			}
+			
+			viewCnt++;
+		}
+	} 
+	
+	for(var i = 0; i<viewPartner.length; i++){
+		addEvent(viewPartner[i], "click", currentDiv, false); 
+		addEvent(viewPartner[i], "mouseover", stopAutoSlide, false); 
+		addEvent(viewPartner[i], "mouseleave", startAutoSlide, false); 
+	} 
+	
+	for(var i = 0; i<pmButton.length; i++){
+		addEvent(pmButton[i], "mouseover", stopAutoSlide, false);
+		addEvent(pmButton[i], "mouseleave", startAutoSlide, false);
+	}
+	
+	addEvent(document.getElementsByClassName("w3-display-left")[0], "click", plusDivs, false);
+	addEvent(document.getElementsByClassName("w3-display-right")[0], "click", plusDivs, false);
+	
+</script> 
 </body>
 </html>
