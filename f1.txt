@@ -1,0 +1,5 @@
+add f1.txt
+git status 
+git add f1.txt
+
+new message
