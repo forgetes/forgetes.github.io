@@ -21,6 +21,7 @@
         margin: 0 auto; } }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .main_contents .sub_contents:nth-child(1) .owner_profile {
         width: 80%;
@@ -35,8 +36,11 @@
         margin: 0 auto; } }
     @media only screen and (min-width: 992px) {
 >>>>>>> parent of 118a176... last of last
+=======
+    @media only screen and (min-width: 992px) {
+>>>>>>> parent of b2a0143... 설화 커밋
       .main_contents .sub_contents:nth-child(1) .owner_profile {
-        width: 50%;
+        width: 250px;
         margin: 0 0 0 auto; } }
   @media only screen and (min-width: 768px) {
     .main_contents .sub_contents:nth-child(2) {
@@ -50,6 +54,7 @@
       margin: 0 auto; } }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .main_contents .sub_contents:nth-child(2) .owner_intro {
       width: 90%;
@@ -61,8 +66,11 @@
 =======
   @media only screen and (min-width: 768px) {
 >>>>>>> parent of 118a176... last of last
+=======
+  @media only screen and (min-width: 992px) {
+>>>>>>> parent of b2a0143... 설화 커밋
     .main_contents .sub_contents:nth-child(2) .owner_intro {
-      width: 75%;
+      width: 750px;
       margin: 0; } }
   .main_contents .sub_contents:nth-child(2) .owner_intro .info_contents {
     min-height: 250px;
