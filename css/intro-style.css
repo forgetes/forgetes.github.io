@@ -20,12 +20,15 @@
         width: 90%;
         margin: 0 auto; } }
 <<<<<<< HEAD
+<<<<<<< HEAD
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .main_contents .sub_contents:nth-child(1) .owner_profile {
         width: 80%;
         margin: auto 0 auto auto; } }
     @media only screen and (min-width: 1200px) {
 =======
+=======
+>>>>>>> parent of 118a176... last of last
     @media only screen and (min-width: 768px) {
       .main_contents .sub_contents:nth-child(1) .owner_profile {
         width: 750px;
@@ -46,11 +49,15 @@
       width: 90%;
       margin: 0 auto; } }
 <<<<<<< HEAD
+<<<<<<< HEAD
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .main_contents .sub_contents:nth-child(2) .owner_intro {
       width: 90%;
       margin: auto auto auto 0; } }
   @media only screen and (min-width: 1200px) {
+=======
+  @media only screen and (min-width: 768px) {
+>>>>>>> parent of 118a176... last of last
 =======
   @media only screen and (min-width: 768px) {
 >>>>>>> parent of 118a176... last of last
