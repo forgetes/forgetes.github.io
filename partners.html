@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1", "user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 <title>SJ TECH</title>
-
+<!--
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/3/w3.css">
+-->
 <link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.min.css" />
 <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="./css/common-style.css" />
 <link rel="shortcut icon" href="./img/sjtechfavicon.ico">
 
-<<<<<<< HEAD
 <style>
 	.mySlides {
 		display:none;
@@ -24,12 +25,10 @@
 	.my-content{
 		overflow-x: hidden;
 		position: relative;
-		margin: 1px;
-		padding: 0;
 	}
 	.logo-col{
 		width: 10000px;
-		transition-duration: 3s;
+		transition-duration: 3s; 
 		-webkit-transition-duration: 3s;
 		margin: 0;
 		padding: 0;
@@ -44,13 +43,13 @@
 	}
 	.w3-content-yop{
 		/*position: relative;*/
+		max-height: 500px;
 	}
 	.w3-section{
 		/*margin-left: 2px;*/
 		margin-top:16px!important;
 		margin-bottom:16px!important;
 	}
-
 	@media (max-width: 991px) {
 		.logo-col{
 			display: none;
@@ -64,7 +63,7 @@
 			width: 315px;
 			display: inline-block;
 			float: left;
-			margin: 10px 7px 10px 5px;
+			margin: 10px;
 			background-color: rgba(255, 255, 255, 0.9);
 			border: 1px solid #eee;
 			border-radius: 5px;
@@ -72,15 +71,36 @@
 			box-shadow: 0px 5px 30px rgba(45, 29, 29, 0.25);
 		}
 	}
-	.w3-opacity,.w3-hover-opacity:hover{opacity:0.60;-webkit-backface-visibility:hidden}
-	.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1;-webkit-backface-visibility:hidden}
-	.w3-opacity-max{opacity:0.25;-webkit-backface-visibility:hidden}
-	.w3-opacity-min{opacity:0.75;-webkit-backface-visibility:hidden}
-	
-	
-	.w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
-.w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
-	
+	.w3-opacity,.w3-hover-opacity:hover{
+		opacity:0.60;
+		-webkit-backface-visibility:hidden
+	}
+	.w3-opacity-off,.w3-hover-opacity-off:hover{
+		opacity:1;
+		-webkit-backface-visibility:hidden
+	}
+	.w3-opacity-max{
+		opacity:0.25;
+		-webkit-backface-visibility:hidden
+	}
+	.w3-opacity-min{
+		opacity:0.75;
+		-webkit-backface-visibility:hidden
+	}
+	.w3-display-left{
+		position:absolute;
+		top:60%;
+		left:0%;
+		transform:translate(0%,-50%);
+		-ms-transform:translate(-0%,-50%)
+	}
+	.w3-display-right{
+		position:absolute;
+		top:60%;
+		right:0%;
+		transform:translate(0%,-50%);
+		-ms-transform:translate(0%,-50%)
+	}
 	.w3-button{
 		-webkit-touch-callout: none;
 		-webkit-user-select: none;
@@ -93,11 +113,28 @@
 		padding: 8px 16px;
 		opacity:0.75;
 	}
-	.w3-button{border:none;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;text-align:center;cursor:pointer;white-space:nowrap}
-	.w3-button:hover{color:#000!important;background-color:#ccc!important}
+	.w3-button{
+		border:none;
+		display:inline-block;
+		outline:0;
+		padding:6px 16px;
+		vertical-align:middle;
+		overflow:hidden;
+		text-decoration:none!important;
+		text-align:center;
+		cursor:pointer;
+		white-space:nowrap
+	}
+	.w3-button:hover{
+		color:#000!important;
+		background-color:#ccc!important
+	}
+	.big-picture{
+		width: 1000px;
+		height: 450px;
+		margin: 0 auto;
+	}
 </style>
-=======
->>>>>>> parent of b2a0143... 설화 커밋
 </head>
 <body>
 <!-- top area --> 
@@ -106,16 +143,23 @@
 		<div class="floating_header_inner">
 			<div class="floating_header_inner_container">
 				<div class="floating_header_inner_container_contents">
-					<div class="floating_header_inner_container_contents_left">
-						<p class="menu_left"><img src="./img/sjtech.PNG" alt="main-logo"></p>
-					</div>
-					<div class="floating_header_inner_container_contents_right_minimal hidden-md hidden-lg">
+					<div class="search_hideen_bar hidden-md hidden-lg">
 						<div class="input-group input-group-md">
-							<input type="text" id="floating_search" class="form-control" placeholder="원하는 내용 찾기">
+							<input type="text" class="search_text_minimal form-control" placeholder="원하는 내용 찾기">
 							<span class="input-group-btn">
 								<button class="small_search btn btn-default btn-md" type="button"><span class="glyphicon glyphicon-search"></span></button>
-								<button class="small_menu btn btn-default btn-md" type="button"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
 							</span>
+						</div>
+					</div> 
+					<div class="floating_header_inner_container_contents_left">
+						<p class="menu_left"><a href="../index.html"><img src="./img/sjtechlogo.png" alt="main-logo" class="img-responsive"></a></p>
+					</div>				
+					<div class="floating_header_inner_container_contents_right_minimal hidden-md hidden-lg">
+						<div>
+							<a href="#" id="floating_search"><span id="fsglyphicon" class="glyphicon glyphicon-search"></span></a>
+						</div>
+						<div>
+							<a href="#" class="small_menu"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
 						</div>
 					</div>
 					<div class="floating_header_inner_container_contents_right hidden-sm hidden-xs">
@@ -124,14 +168,12 @@
 							<li><a href="../product.html" target="_self">PRODUCT</a></li>
 							<li><a href="../partners.html" target="_self">PARTNERS</a></li>
 							<li><a href="../support.html" target="_self">SUPPORT</a></li>
-							<li><a href="../blog.html" target="_self">BLOG</a></li>							
+							<li><a href="../blog.html" target="_self">BLOG</a></li>				
 						</ol>
 						<div class="floating_search_big_text hidden-sm hidden-xs">
-							<div class="input-group input-group-sm">
-								<span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
-								<input type="text" id="search_big_text" class="form-control" placeholder="원하는 내용 찾기">
-								<!--<span class="glyphicon glyphicon-remove form-control-feedback remove_btn" aria-hidden="true"></span>-->
-							</div>							
+							<a id="search_big_btn" class="search_a"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+							<input type="text" id="search_big_text" placeholder="원하는 내용 찾기">
+							<a id="remove_big_btn" class="remove_a"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
 						</div>
 						<div class="floating_header_inner_container_contents_right_search hidden-sm hidden-xs">
 							<a href="#" id="floating_search_big_btn" target="_blank" class="glyphicon glyphicon-search"></a>
@@ -143,22 +185,25 @@
 		</div>		
 	</div>
 </header>
-<<<<<<< HEAD
+ 
 <main>
+<br/>
 <h1 style="text-align:center;">선진과 함께하는 성공적인 파트너쉽 입니다.</h1>
 <h3 style="text-align:center;">다양한 산업군에서 함께해 주십니다.</h3>
-<div class="w3-content" style="max-width:1000px">
+<div class="w3-content" style="max-width:1005px">
 	<div class="w3-content-yop">
 		<button class="w3-button w3-display-left" value="-1">&#10094;</button>
-		<img class="mySlides img-responsive" src="./img/logo/adidas.jpg" >
-		<img class="mySlides img-responsive" src="./img/logo/google.jpg" >
-		<img class="mySlides img-responsive" src="./img/logo/gsshop.jpg" >
-		<img class="mySlides img-responsive" src="./img/logo/lgcnsnew.gif" >
-		<img class="mySlides img-responsive" src="./img/logo/marvel.JPG" >
-		<img class="mySlides img-responsive" src="./img/logo/nike.jpg" >
-		<img class="mySlides img-responsive" src="./img/logo/pixar.JPG" >
-		<img class="mySlides img-responsive" src="./img/logo/samsung.jpg" >
-		<img class="mySlides img-responsive" src="./img/logo/waltdisney.jpg" >
+		<div class="big-picture">
+			<img class="mySlides img-responsive" src="./img/logo/adidas.jpg" >
+			<img class="mySlides img-responsive" src="./img/logo/google.jpg" >
+			<img class="mySlides img-responsive" src="./img/logo/gsshop.jpg" >
+			<img class="mySlides img-responsive" src="./img/logo/lgcnsnew.gif" >
+			<img class="mySlides img-responsive" src="./img/logo/marvel.JPG" >
+			<img class="mySlides img-responsive" src="./img/logo/nike.jpg" >
+			<img class="mySlides img-responsive" src="./img/logo/pixar.JPG" >
+			<img class="mySlides img-responsive" src="./img/logo/samsung.jpg" >
+			<img class="mySlides img-responsive" src="./img/logo/waltdisney.jpg" >
+		</div>
 		<button class="w3-button w3-display-right" value="1">&#10095;</button>
 	</div>
 	
@@ -198,9 +243,6 @@
 </div>
 	
 </main>
-=======
-<main></main>
->>>>>>> parent of b2a0143... 설화 커밋
 <!-- bottom area -->
 <bottom>
 	<div class="bottom_div">
@@ -211,7 +253,7 @@
 				</div>
 				<div class="bottom_middle">
 					<div class="bottom_left">
-						서울특별시 구로구 신도림로11길 8-17 <kbd>선진기계</kbd> | 대표이사: 윤 완 선 |
+						서울특별시 구로구 신도림로11길 8-17 선진기계 | 대표이사: 윤 완 선 |
 						<abbr title="Phone">Tel:</abbr> 02-2677-5950 | <abbr title="Phone">Fax:</abbr> 02-2677-5950
 						<div class="choose_lang hidden-md hidden-lg">대한민국</div>
 					</div>
@@ -220,15 +262,16 @@
 					</div>
 				</div>	
 				<div class="bottom_line_down"></div>	
-				<p class="bottom_copy"><samp>Copyright © 2016 <mark>tfcp</mark> Corp.</samp><br/><samp>본 페이지는 <strong>백수</strong>가 학습용으로 제작 하였습니다. 불편하신 점이 있으면 바로 조치하도록 하겠습니다.</samp> <br/>본 페이지는 크롬 최신버전에 최적화 되어 있습니다.</p>
+				<p class="bottom_copy"><samp>Copyright © 2016 <mark>tfcp</mark> Corp.</samp><br/><br/>본 페이지는 크롬 최신버전에 최적화 되어 있습니다.</p>
 			</div>
 		</div>
 	</div>
 </bottom>
+
+<!-- JavaScript zone -->
 <script src="js/jQuery/jquery-3.1.1.min.js"></script>
 <script src="js/jQuery/jquery-migrate-3.0.0.js"></script>
-<<<<<<< HEAD
-<script type="text/javascript" src="/js/top-and-bottom.js"></script>
+<script type="text/javascript" src="js/top-and-bottom.js"></script>
 <script type="text/javascript">
 	/* addEventListener이 ie8 이하 부터 addEventListener는 먹히지 않는다*/
 	function addEvent(element, eventName, cb, isCapture) { 
@@ -240,9 +283,7 @@
 			element["on" + eventName] = cb; 
 		} 
 	}
-
-	var smallSlides = document.getElementsByClassName("view-partner");
-	var pmButton = document.getElementsByClassName("w3-button");
+	
 	var slideIndex = 1;
 	var viewSeq = [false, false];
 	var $rightButton = $(".w3-display-right");
@@ -259,28 +300,29 @@
 		autoSlide = setInterval(function(){$rightButton.trigger("click");}, 5000);
 	}
 
-	function plusDivs(event) {
-		var n = parseInt(event.target.getAttribute("value"));
-		if(event.target.classList.contains("view-partner")){
+	function plusDivs(e) {
+		if(e.preventDefault){
+			e.preventDefault();
+		} else {
+			e.returnValue = false;
+		}
+		
+		var n = parseInt(e.target.getAttribute("value"));
+		if(e.target.classList.contains("view-partner")){
 			showDivs(slideIndex = n);
 			return;
 		}
 		showDivs(slideIndex += n);
 	}
-
-	function currentDiv(event) {
-		var n = parseInt(event.target.getAttribute("value"));
-	  	showDivs(slideIndex = n);
-	}
-
+	
 	function showDivs(n) {
-		var i;
-		var viewCnt = 1;
-		var x = document.getElementsByClassName("mySlides"); //큰 그림
-		var xLength = x.length;
-		var dots = smallSlides;								//작은 그림
-		var dotsLength = dots.length;
-		var dispWithSize = 330;
+		var i
+			,viewCnt = 1
+			,x = document.getElementsByClassName("mySlides") //큰 그림
+			,xLength = x.length
+			,dots = document.getElementsByClassName("view-partner") //작은 그림
+			,dotsLength = dots.length
+			,dispWithSize = 335;
 		
 		if (n > xLength) {slideIndex = 1}
 		if (n < 1) {slideIndex = xLength}
@@ -305,7 +347,7 @@
 		}
 		if(slideIndex === dotsLength){
 			return;
-		}
+		} 
 		
 		//console.log("current ",slideView.transform);
 		
@@ -313,26 +355,28 @@
 		slideView.transform = "translate3d("+((currentView-1)*-dispWithSize)+"px, 0px, 0px)";
 	}
 	
-	for(var i = 0; i<smallSlides.length; i++){
-		addEvent(smallSlides[i], "click", plusDivs, false); 
-		addEvent(smallSlides[i], "mouseover", stopAutoSlide, false); 
-		addEvent(smallSlides[i], "mouseleave", startAutoSlide, false); 
-	} 
+	var slideEvent = function(){
+		var smallSlides = document.getElementsByClassName("view-partner");
+		
+		for(var i = 0, slideLength = smallSlides.length; i<slideLength; i+=1){
+			addEvent(smallSlides[i], "click", plusDivs, false); 
+			addEvent(smallSlides[i], "mouseover", stopAutoSlide, false); 
+			addEvent(smallSlides[i], "mouseleave", startAutoSlide, false); 
+		} 
+	}();
 	
-	for(var i = 0; i<pmButton.length; i++){
-		addEvent(pmButton[i], "mouseover", stopAutoSlide, false);
-		addEvent(pmButton[i], "mouseleave", startAutoSlide, false);
-	}
+	var btnEvent = function(){
+		var pmButton = document.getElementsByClassName("w3-button");
+		
+		for(var i = 0, btnlength = pmButton.length; i<btnlength; i+=1){
+			addEvent(pmButton[i], "mouseover", stopAutoSlide, false);
+			addEvent(pmButton[i], "mouseleave", startAutoSlide, false);
+		}
+	}();
 	
 	addEvent(document.getElementsByClassName("w3-display-left")[0], "click", plusDivs, false);
 	addEvent(document.getElementsByClassName("w3-display-right")[0], "click", plusDivs, false);
 	
 </script> 
-=======
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-<!--<script src="/js/jQuery/jquery-ui.min.js"></script>-->
-<!--<script src="/js/jQuery/jquery.mobile-1.4.5.min.js"></script>-->
-<script type="text/javascript" src="/js/top-and-bottom.js"></script>	
->>>>>>> parent of b2a0143... 설화 커밋
 </body>
 </html>

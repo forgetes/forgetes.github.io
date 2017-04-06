@@ -9,68 +9,41 @@
     @media only screen and (max-width: 767px) {
       .main_contents .sub_contents:nth-child(1) {
         width: 100%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
       .main_contents .sub_contents:nth-child(1) {
         width: 100%; } }
     @media only screen and (min-width: 992px) {
       .main_contents .sub_contents:nth-child(1) {
         width: 33.33333333%; } }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 991px) {
       .main_contents .sub_contents:nth-child(1) .owner_profile {
         width: 90%;
         margin: 0 auto; } }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .main_contents .sub_contents:nth-child(1) .owner_profile {
         width: 80%;
         margin: auto 0 auto auto; } }
     @media only screen and (min-width: 1200px) {
-=======
-=======
->>>>>>> parent of 118a176... last of last
-    @media only screen and (min-width: 768px) {
       .main_contents .sub_contents:nth-child(1) .owner_profile {
-        width: 750px;
-        margin: 0 auto; } }
-    @media only screen and (min-width: 992px) {
->>>>>>> parent of 118a176... last of last
-=======
-    @media only screen and (min-width: 992px) {
->>>>>>> parent of b2a0143... 설화 커밋
-      .main_contents .sub_contents:nth-child(1) .owner_profile {
-        width: 250px;
+        width: 50%;
         margin: 0 0 0 auto; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 991px) {
     .main_contents .sub_contents:nth-child(2) {
       padding-top: 25px; } }
   @media only screen and (min-width: 992px) {
     .main_contents .sub_contents:nth-child(2) {
       padding-top: 0; } }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 991px) {
     .main_contents .sub_contents:nth-child(2) .owner_intro {
       width: 90%;
       margin: 0 auto; } }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .main_contents .sub_contents:nth-child(2) .owner_intro {
       width: 90%;
       margin: auto auto auto 0; } }
   @media only screen and (min-width: 1200px) {
-=======
-  @media only screen and (min-width: 768px) {
->>>>>>> parent of 118a176... last of last
-=======
-  @media only screen and (min-width: 768px) {
->>>>>>> parent of 118a176... last of last
-=======
-  @media only screen and (min-width: 992px) {
->>>>>>> parent of b2a0143... 설화 커밋
     .main_contents .sub_contents:nth-child(2) .owner_intro {
-      width: 750px;
+      width: 75%;
       margin: 0; } }
   .main_contents .sub_contents:nth-child(2) .owner_intro .info_contents {
     min-height: 250px;
