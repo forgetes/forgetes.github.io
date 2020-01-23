@@ -3,10 +3,11 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
 
     <style>
         .top-content{
@@ -14,6 +15,17 @@
         }
         .middle-content{
             padding-top: 2em;
+        }
+        figure > img {
+            max-width: 100%;
+            width: 155px;
+            height: 180px;
+        }
+        .nav-item > a{
+            color: black;
+        }
+        .figure-caption {
+            font-size: 130%;
         }
     </style>
 
@@ -23,24 +35,38 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <title>싸커패밀래 소개</title>
+    <title>싸커패밀리 소개</title>
   </head>
-  <body>
-    <div class="container-fluid">
-        <div class="row" style="background-color: #FFBB00;">
-            <div class="col-12">
-                <h1 class="display-8">싸커패밀리 선수단</h1>
-            </div>
-        </div>
+  <body>      
+    <nav class="container" style="background-color: #f1f1f1;">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">팀소개</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">선수단</a>
+            </li>            
+            <li class="nav-item">
+                <a class="nav-link" href="#">입단희망</a>
+            </li>
+        </ul>
+    </nav>
 
+    <header style="background-color: #FFBB00; padding:1.5em 0 1em 0;">
+        <div class="container">
+            <h3 style="font-family: 'Jua', sans-serif;">FC싸커패밀리(<span style="color:#0078cb">SO</span>ccer<span style="color:#0078cb">FA</span>mily)</h3>
+        </div>
+    </header>
+
+    <div class="container" style="padding-top:1em;">        
         <!-- top content -->
         <div class="row top-content">
             <div class="col-6 col-md-3">
                 <details>
                     <summary>골키퍼(GK)</summary>
                     <samp>
-                        <a href="#p_kjy"><span>1. 김종윤(35)</span></a> <!-- 데헤야 등번호-->
-                        <a href="#p_hjh"><span>22. 현지환(??) </span></a> <!-- 가자니가 등번호-->
+                        <a href="#p_kjy"><span>1.김종윤</span></a> <!-- 데헤야 등번호-->
+                        <a href="#p_hjh"><span>22.현지환</span></a> <!-- 가자니가 등번호-->
                     </samp>
                 </details>
             </div>
@@ -48,10 +74,10 @@
                 <details>
                     <summary>수비수(DF)</summary>
                     <samp>
-                        <a href="#p_sdh"><span>4. 서동환(35)</span></a> <!-- 반다이크 등번호-->
-                        <a href="#p_ljy"><span>5. 이재영(30)</span></a> <!-- 헤리맥과이어 등번호-->
-                        <a href="#p_jyj"><span>66. 정연제(35)</span></a> <!-- 알렉산더 아놀드 등번호-->
-                        <a href="#p_sky"><span>6. 신건영(35)</span></a> <!-- 다빈손 산체스 등번호-->
+                        <a href="#p_sdh"><span>4.서동환</span></a> <!-- 반다이크 등번호-->
+                        <a href="#p_ljy"><span>5.이재영</span></a> <!-- 헤리맥과이어 등번호-->
+                        <a href="#p_jyj"><span>66.정연제</span></a> <!-- 알렉산더 아놀드 등번호-->
+                        <a href="#p_sky"><span>6.신건영</span></a> <!-- 다빈손 산체스 등번호-->
                     </samp>
                 </details>   
             </div>
@@ -59,11 +85,11 @@
                 <details>
                     <summary>미드필더(MF)</summary>
                     <samp>
-                        <a href="#p_yyj"><span>24. 윤영준(35)</span></a>   
-                        <a href="#p_pis"><span>31. 박인수(35)</span></a> <!-- 마티치 등번호--> 
-                        <a href="#p_hjh"><span>11. 한재호(35)</span></a> <!-- 살라 등번호--> 
-                        <a href="#p_yjs"><span>10. 양준석(35)</span></a> <!-- 메시 등번호-->
-                        <a href="#p_jhj"><span>28. 제환준(36)</span></a> <!-- 은돔벨레 등번호-->
+                        <a href="#p_yyj"><span>24.윤영준</span></a>   
+                        <a href="#p_pis"><span>31.박인수</span></a> <!-- 마티치 등번호--> 
+                        <a href="#p_hjh"><span>11.한재호</span></a> <!-- 살라 등번호--> 
+                        <a href="#p_yjs"><span>10.양준석</span></a> <!-- 메시 등번호-->
+                        <a href="#p_jhj"><span>28.제환준</span></a> <!-- 은돔벨레 등번호-->
                     </samp>
                 </details> 
             </div>
@@ -71,145 +97,147 @@
                 <details>
                     <summary>공격수(FW)</summary>
                     <samp>
-                        <a href="#p_msy"><span>9. 맹수영(35)</span></a>    <!-- 래반도프스키 등번호-->    
-                        <a href="#p_kkt"><span>19. 김기태(36)</span></a> <!-- 르로이 사네 등번호-->
-                        <a href="#p_jjy"><span>14. 장진영(35)</span></a> <!-- 린가드 등번호-->
-                        <a href="#p_cew"><span>9. 최은우(35)</span></a> <!-- 호돈 등번호-->
+                        <a href="#p_msy"><span>7.맹수영</span></a>    <!-- 그리즈만 등번호-->    
+                        <a href="#p_kkt"><span>19.김기태</span></a> <!-- 르로이 사네 등번호-->
+                        <a href="#p_jjy"><span>14.장진영</span></a> <!-- 린가드 등번호-->
+                        <a href="#p_cew"><span>9.최은우</span></a> <!-- 호돈 등번호-->
                     </samp>
                 </details> 
             </div>
         </div>
+
         <!-- middle content -->
         <div class="row middle-content">
             <!-- 골키퍼 -->
             <div class="col-12">
                 <div class="row">
-                    <div class="col-12">
-                        <h3 style="text-align:center;">골키퍼(GK)</h3>    
+                    <div class="col-12" style="padding-top:1em;">
+                        <h3 style="text-align:center;">골키퍼(GK)</h3>
+                        <hr style="border:0; height:2px; background:#ccc;"> 
                     </div>  
                 </div>                
                 <div class="row">                         
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/kjy.png" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_kjy">                            
-                            <figcaption class="figure-caption">1. 김종윤(35)</figcaption>
+                            <img src="./img/player/kjy.png" class="figure-img rounded" alt="numberonegoalkeeper" id="p_kjy">                            
+                            <figcaption class="figure-caption text-right">1. 김종윤</figcaption>
                         </figure>
                     </div>                        
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/hjh.png" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_hjh">                            
-                            <figcaption class="figure-caption">22. 현지환(??)</figcaption>
+                            <img src="./img/player/hjh.png" class="figure-img rounded" alt="numbertwogoalkeeper" id="p_hjh">                            
+                            <figcaption class="figure-caption text-right">22. 현지환</figcaption>
                         </figure>
                     </div>         
                 </div>
             </div>
-
             <!-- 수비수 -->
             <div class="col-12">
                 <div class="row">
-                    <div class="col-12">
-                        <h3 style="text-align:center;">수비수(DF)</h3>    
+                    <div class="col-12" style="padding-top:1em;">
+                        <h3 style="text-align:center;">수비수(DF)</h3>
+                        <hr style="border:0; height:2px; background:#ccc;"> 
                     </div>  
                 </div>                
                 <div class="row">                         
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/sdh.PNG" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_sdh">                            
-                            <figcaption class="figure-caption">4. 서동환(35)</figcaption>
+                            <img src="./img/player/sdh.PNG" class="figure-img rounded" alt="" id="p_sdh">                            
+                            <figcaption class="figure-caption text-right">4. 서동환</figcaption> <!--libero-->
                         </figure>
                     </div>                        
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/ljy.PNG" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_ljy">                            
-                            <figcaption class="figure-caption">5. 이재영(30)</figcaption>
+                            <img src="./img/player/ljy.PNG" class="figure-img rounded" alt="" id="p_ljy">                            
+                            <figcaption class="figure-caption text-right">5. 이재영</figcaption> <!--cb-->
                         </figure>
                     </div>
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/jyj.png" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_jyj">                            
-                            <figcaption class="figure-caption">66. 정연제(35)</figcaption>
+                            <img src="./img/player/jyj.png" class="figure-img rounded" alt="" id="p_jyj">                            
+                            <figcaption class="figure-caption text-right">66. 정연제</figcaption> <!--lwb, rwb-->
                         </figure>
                     </div>                        
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/sky.png" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_sky">                            
-                            <figcaption class="figure-caption">6. 신건영(35)</figcaption>
+                            <img src="./img/player/sky.png" class="figure-img rounded" alt="" id="p_sky">                            
+                            <figcaption class="figure-caption text-right">6. 신건영</figcaption> <!--cb-->
                         </figure>
                     </div>
                 </div>
             </div>
-
             <!-- 미드필더 -->
             <div class="col-12">
                 <div class="row">
-                    <div class="col-12">
-                        <h3 style="text-align:center;">미드필더(MF)</h3>    
+                    <div class="col-12" style="padding-top:1em;">
+                        <h3 style="text-align:center;">미드필더(MF)</h3>   
+                        <hr style="border:0; height:2px; background:#ccc;"> 
                     </div>  
                 </div>                
                 <div class="row">                         
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/yyj.png" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_yyj">                            
-                            <figcaption class="figure-caption">24. 윤영준(35)</figcaption>
+                            <img src="./img/player/yyj.png" class="figure-img rounded" alt="" id="p_yyj">                            
+                            <figcaption class="figure-caption text-right">24. 윤영준</figcaption> <!--메짤라,CM,DM-->
                         </figure>
                     </div>                        
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/grt.PNG" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_pis">                            
-                            <figcaption class="figure-caption">31. 박인수(35)</figcaption>
+                            <img src="./img/player/grt.PNG" class="figure-img rounded" alt="" id="p_pis">                            
+                            <figcaption class="figure-caption text-right">31. 박인수</figcaption> <!--LAM-->
                         </figure>
                     </div>
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/hjh2.png" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_hjh2">                            
-                            <figcaption class="figure-caption">11. 한재호(35)</figcaption>
-                        </figure>
+                            <img src="./img/player/hjh2.png" class="figure-img rounded" alt="" id="p_hjh2">                            
+                            <figcaption class="figure-caption text-right">11. 한재호</figcaption> <!--RAM,LAM-->
+                        </figure> 
                     </div>                        
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/yjs.PNG" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_yjs">                            
-                            <figcaption class="figure-caption">10. 양준석(35)</figcaption>
+                            <img src="./img/player/yjs.PNG" class="figure-img rounded" alt="" id="p_yjs">                            
+                            <figcaption class="figure-caption text-right">10. 양준석</figcaption> <!--cm-->
                         </figure>
                     </div>
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/jhj.png" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_jhj">                            
-                            <figcaption class="figure-caption">28. 제환준(36)</figcaption>
+                            <img src="./img/player/jhj.png" class="figure-img rounded" alt="" id="p_jhj">                            
+                            <figcaption class="figure-caption text-right">28. 제환준</figcaption> <!--dm-->
                         </figure>
                     </div>     
                 </div>
             </div>
-
             <!-- 공격수 -->
             <div class="col-12">
                 <div class="row">
                     <div class="col-12">
-                        <h3 style="text-align:center;">공격수(FW)</h3>    
+                        <h3 style="text-align:center;">공격수(FW)</h3>
+                        <hr style="border:0; height:2px; background:#ccc;"> 
                     </div>  
                 </div>                
                 <div class="row">                         
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/msy.png" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_msy">                            
-                            <figcaption class="figure-caption">9. 맹수영(35)</figcaption>
+                            <img src="./img/player/msy.png" class="figure-img rounded" alt="" id="p_msy">                            
+                            <figcaption class="figure-caption text-right">7. 맹수영</figcaption>  <!--st,ss-->
                         </figure>
                     </div>                        
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/kkt.png" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_kkt">                            
-                            <figcaption class="figure-caption">19. 김기태(36)</figcaption>
+                            <img src="./img/player/kkt.png" class="figure-img rounded" alt="" id="p_kkt">                            
+                            <figcaption class="figure-caption text-right">19. 김기태</figcaption> <!--rw-->
                         </figure>
                     </div>
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/jjy.png" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_jjy">                            
-                            <figcaption class="figure-caption">14. 장진영(35)</figcaption>
+                            <img src="./img/player/jjy.png" class="figure-img rounded" alt="" id="p_jjy">                            
+                            <figcaption class="figure-caption text-right">14. 장진영</figcaption> <!--rw-->
                         </figure>
                     </div>                        
                     <div class="col-6 col-md-3" style="text-align: center;">
                         <figure class="figure">
-                            <img src="./img/player/cew.PNG" class="figure-img img-fluid rounded" alt="numberonegoalkeeper" id="p_cew">                            
-                            <figcaption class="figure-caption">9. 최은우(35)</figcaption>
+                            <img src="./img/player/cew.PNG" class="figure-img rounded" alt="" id="p_cew">                            
+                            <figcaption class="figure-caption text-right">9. 최은우</figcaption> <!--st-->
                         </figure>
                     </div>
                 </div>
