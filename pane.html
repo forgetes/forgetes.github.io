@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>전술 그림판</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+
+    <style>
+        .nav-item > a{
+            color: black;
+        }    
+        div input 
+        {
+            width:40px;
+            height:40px;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  </head>
+
+  <body>       
+    <!-- <nav style="background-color: #f1f1f1;">
+        <ul class="container nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">팀소개</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">선수단</a>
+            </li>            
+            <li class="nav-item">
+                <a class="nav-link" href="#">입단희망</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="./pane.html">전술판</a>
+            </li>
+        </ul>
+    </nav> -->
+    
+    <div style="height: 100px; background-color: #8000FF; display: block;">
+
+    </div>
+
+
+    <canvas id="canvas" width="300" height="300" style="border:solid 1px #000000; background-color:#009900;">이 브라우저에서는 HTML5 CANVAS를 지원하지 않습니다.</canvas>
+
+    <br/>
+    Line :
+    <select id="lineWeight">
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="4">4</option>
+        <option value="8">8</option>
+        <option value="16">16</option>
+        <option value="32">32</option>
+    </select>
+    <div>
+        <input type="button" alt="흑" style="background-color:#000000;" />
+        <input type="button" alt="회2" style="background-color:#666666;" />
+        <input type="button" alt="빨" style="background-color:#ff0000;" />				
+        <input type="button" alt="주" style="background-color:#FF7F00;" />
+        <input type="button" alt="노" style="background-color:#FFFF00;" />
+        <input type="button" alt="파" style="background-color:#0099FF;" />
+        <input type="button" alt="남" style="background-color:#082567;" />
+        <input type="button" alt="보" style="background-color:#8000FF;" />
+    </div>		
+    <div>
+        <input type="button" id="new" value="new" style="width:80px; " />
+        <input type="button" id="eraser" value="eraser" style="width:80px;" />
+        <input type="button" id="save" value="save" style="width:80px;" />
+    </div>
+
+    <div id="show-as-Save">
+
+    </div>    
+
+    <script type="text/javascript">
+		$(function()
+		{
+			//$("#canvas").width( window.outerWidth );
+            //$("#canvas").height( window.outerHeight );
+		});
+
+		// 색상
+		var color = $("div input:eq(0)").css("background-color"); 
+		$("div input").click(function(event){
+			mode = "draw";
+			color = $(this).css("background-color");
+		});
+
+		// 라인 두께 
+		var lineWeight = $("#lineWeight").val();
+		$("#lineWeight").change(function(event){
+			mode = "draw";
+			lineWeight = $(this).val();
+		});
+
+		// 지우개
+		$("#eraser").click(function(event){
+			mode = "eraser";
+		});
+
+		// 모두지우기
+		$("#new").click(function(event){		
+			ctx.clearRect(0,0, $("#canvas").width(), $("#canvas").height() );
+			$(this).blur();
+		});
+        
+		var mode = 1;
+		var canvas = document.querySelector("#canvas");		
+		var ctx = canvas.getContext("2d");		// CanvasRenderingContext2D 
+
+		// touch start
+		canvas.addEventListener("touchstart", function(event) {
+			var touch = event.touches[0];
+
+            ctx.beginPath();
+            
+            if(mode == "eraser")
+			{
+                ctx.fillStyle = "#009900";
+                ctx.arc(event.touches[0].pageX, event.touches[0].pageY, 10, 0, Math.PI*2, false);
+			}
+			else
+			{
+				ctx.fillStyle = color;
+                ctx.arc(event.touches[0].pageX, event.touches[0].pageY, lineWeight, 0, Math.PI*2, false);
+                console.log(event.touches[0].screenY, event.touches[0].screenX);
+                console.log(event.touches[0].pageY, event.touches[0].pageX);
+                console.log(event.touches[0].clientY, event.touches[0].clientX);                 
+			}
+            ctx.fill();
+        });
+        
+		// touch move
+		canvas.addEventListener("touchmove", function(evt) {
+		    event.preventDefault();
+
+            ctx.beginPath();
+            ctx.arc(evt.touches[0].pageX, evt.touches[0].pageY, lineWeight, 0, Math.PI*2, false);
+            ctx.fill();
+        });
+        
+		// touch end
+		canvas.addEventListener("touchend", function(event) {
+			ctx.closePath();
+			ctx.save();			
+        });
+        
+		// touch cancel
+		canvas.addEventListener("touchcancel", function(event) {
+			// touch start 들어온후에 touchEnd가 안일어나고 끝난경우... 
+			// 예를들어 touchmove에서 alert() 띄우면 touchcancel 이벤트가 발생함.
+
+			ctx.closePath();
+			ctx.save();
+
+			//document.querySelector("#touchLog").innerHTML = "[CANCEL] touches.length : " + event.touches.length;
+		});		
+		
+	</script>
+
+
+    <!-- <script>
+        const canvas = document.querySelector('.canvas');
+        const context = canvas.getContext('2d');
+        let drawingMode; 
+
+        function downHandler(){
+            drawingMode = true;            
+        }
+
+        function upHandler(){
+            drawingMode = false;
+        }
+
+        function clickHandler(evt){
+            if(!drawingMode){
+                return;
+            }
+            context.beginPath();
+            context.arc(evt.layerX, evt.layerY, 3, 0, Math.PI*2, false);
+            context.fill();
+        }
+         canvas.addEventListener('mousedown', downHandler);
+         canvas.addEventListener('mousemove', clickHandler);
+         canvas.addEventListener('mouseup', upHandler);
+    </script> -->
+  </body>
+</html>
